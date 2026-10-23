@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Beyza 🤍</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== 1. EKRAN: SİYAH EKRAN & KALP ÇİZİMİ ==================== -->
+  <div id="draw-screen" class="screen active">
+    <canvas id="draw-canvas"></canvas>
+    
+    <div class="screen-ui" id="draw-ui">
+      <h1 class="prompt-text">Kalp çiz</h1>
+      <div class="timer-bar-container">
+        <div id="timer-bar" class="timer-bar"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 2. EKRAN: SİYAH AÇILAN EKRAN (BÜYÜYEN BEYAZ KALP) ==================== -->
+  <div id="heart-screen" class="screen">
+    <canvas id="heart-canvas"></canvas>
+
+    <div class="screen-ui heart-ui">
+      <h2 class="beyza-title">Beyza 🤍</h2>
+      <p class="heart-hint">Ekrana tıkla ve basılı tut...</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
